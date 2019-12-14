@@ -90,7 +90,7 @@ void recvWithStartEndMarkers() {
 }
 
 //-------------------------- END recvWithStartEndMarkers
-//if requesting weight
+
 
 void parseData() {      
   char * strtokIndx; 
@@ -100,8 +100,7 @@ void parseData() {
   strcpy(queryType, strtokIndx);
     
 
-    
-//get direction:0=CW,1=CC
+
     strtokIndx = strtok(NULL, ","); // get the first part - the string
     servo1Pos = atoi(strtokIndx); // copy it to servo2
  
